@@ -30,7 +30,7 @@ int main()
 	//check for correct entry
 	while(cin >> gender){
 		//reason for cast is that the return from tolower() is int and gives conversion warning
-		gender = static_cast<char>(tolower(gender));
+		gender = static_cast<unsigned char>(tolower(gender));
 		if(gender == 'm' || gender == 'f'){
 			cout << "If you see " << first_name
 				<< " ask " << ((gender == 'm') ? "him" : "her") << " to call me.\n";
