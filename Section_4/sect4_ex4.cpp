@@ -31,7 +31,7 @@ int main()
 		std::cout << "Is your number <= " << guess << " (y or n)? ";
 		char yesOrNo{};
 		std::cin >> yesOrNo;
-		yesOrNo = static_cast<char>(std::tolower(yesOrNo));
+		yesOrNo = static_cast<unsigned char>(std::tolower(yesOrNo));
 		if(yesOrNo == 'y' || yesOrNo == 'n'){
 			guessAttempts++;
 			if(yesOrNo == 'y'){
