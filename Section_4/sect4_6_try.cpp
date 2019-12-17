@@ -23,7 +23,7 @@ int main()
 	// read whitespace-separated words
 	for(std::string word; std::cin >> word; ){
 		for(auto& c : word){
-			c = static_cast<char>(tolower(c));
+			c = static_cast<unsigned char>(tolower(c));
 		}
 		for(const auto str : dislikedWords){
 			if(str == word){
