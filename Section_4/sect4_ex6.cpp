@@ -33,7 +33,7 @@ int main()
 		std::cin >> spelledNumber;
 		// convert to lower
 		std::transform(spelledNumber.begin(), spelledNumber.end(), spelledNumber.begin(), [](char c){
-			return static_cast<char>(tolower(c));
+			return static_cast<unsigned char>(tolower(c));
 		});
 		// check if has a spelled out number
 		auto spelledIndex = std::find(spelledNumbers.begin(), spelledNumbers.end(), spelledNumber);
