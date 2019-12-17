@@ -26,7 +26,7 @@ int main()
 		// break if EOF and !(NoName and 0))
 		if(std::cin.good() && !(name_score.first == "NoName" && name_score.second == 0)){
 			std::transform(name_score.first.begin(), name_score.first.end(), name_score.first.begin(),
-				[](char name){ return static_cast<char>(::tolower(name)); });
+				[](char name){ return static_cast<unsigned char>(::tolower(name)); });
 
 			// check if duplicated
 			if(ranks.cend() != std::find_if(ranks.cbegin(), ranks.cend(),
