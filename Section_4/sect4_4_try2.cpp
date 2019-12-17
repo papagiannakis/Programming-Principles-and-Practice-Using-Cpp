@@ -44,7 +44,7 @@ int main()
 	std::getline(cin, currency);
 	// change entered currency to lower case
 	for(auto& c : currency){
-		c = static_cast<char>(tolower(c));
+		c = static_cast<unsigned char>(tolower(c));
 	}
 
 	// find conversion type
