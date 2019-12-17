@@ -32,7 +32,7 @@ int main()
 		// set name so first letter is capitalized and rest lower case
 		name[0] = static_cast<unsigned char>(toupper(name[0]));
 		std::transform(name.begin() + 1, name.end(), name.begin() + 1,
-			[](char c){return static_cast<char>(::tolower(c)); });
+			[](char c){return static_cast<unsigned char>(::tolower(c)); });
 
 		// is name in list
 		auto itr{std::find_if(ranks.cbegin(), ranks.cend(),
