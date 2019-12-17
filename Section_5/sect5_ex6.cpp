@@ -47,7 +47,7 @@ try{
 
 	// get unit
 	std::cin >> inputTempearure.first;
-	inputTempearure.first = narrow_cast<char, int>(tolower(inputTempearure.first));
+	inputTempearure.first = narrow_cast<char, int>(tolower(static_cast<unsigned char>(inputTempearure.first)));
 
 	// convert temperatures
 	pType temperatureConverted{};

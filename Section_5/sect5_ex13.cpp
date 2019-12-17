@@ -157,7 +157,7 @@ bool try_again(const std::string& s)
 	std::cout << s;
 	char again{};
 	std::cin >> again;
-	again = narrow_cast<char, int>(tolower(again));
+	again = narrow_cast<char, int>(tolower(static_cast<unsigned char>(again)));
 	if(again == 'y'){
 		return true;
 	}
