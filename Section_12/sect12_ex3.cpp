@@ -21,16 +21,16 @@ try{
 	Point top_left{100,100};
 	Simple_window win{top_left,600,400,"Exercise #3"};
 
-	Graph_lib::Polygon first_initial;	// define with namespace or ambiguous with Polygon in wingdi.h
-	first_initial.add(Point{100,150});
-	first_initial.add(Point{105,150});
-	first_initial.add(Point{105,250});
-	first_initial.add(Point{050,250});
-	first_initial.add(Point{050,245});
-	first_initial.add(Point{100,245});
-	first_initial.set_color(Color::Color_type::red);
-	first_initial.set_fill_color(Color::Color_type::red);
-	win.attach(first_initial);
+	Text first(Point(200, 250), "J");
+	first.set_color(Color::Color_type::red);
+	first.set_font_size(150);
+
+	Text last(Point(300, 250), "W");
+	last.set_color(Color::Color_type::blue);
+	last.set_font_size(150);
+
+	win.attach(first);
+	win.attach(last);
 
 	win.wait_for_button();
 

@@ -47,8 +47,8 @@
     <LibraryPath>$(SolutionDir)..\vcpkg\installed\x64-windows-static\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(SolutionDir)..\vcpkg\installed\x64-windows-static\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)..\vcpkg\installed\x64-windows-static\debug\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)..\..\vcpkg\installed\x64-windows-static\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\..\vcpkg\installed\x64-windows-static\debug\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
