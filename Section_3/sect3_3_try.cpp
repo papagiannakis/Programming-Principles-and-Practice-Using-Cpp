@@ -17,7 +17,8 @@ int main()
 {
 	constexpr double monthsInYear{12.0};
 	constexpr double minAge{0.0};
-	constexpr double maxAge{130.0};
+	//constexpr double maxAge{130.0};
+	constexpr double maxAge = 130.0;
 
 	std::cout << "Please enter your first name: ";
 	std::string first_name;

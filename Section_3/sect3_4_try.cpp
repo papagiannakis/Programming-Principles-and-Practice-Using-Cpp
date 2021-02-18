@@ -16,6 +16,7 @@ int main()
 
 	cout << "Please enter a value: ";
 	int n{};
+	int N;
 	std::cin >> n;
 
 	cout << "n == " << n << endl
